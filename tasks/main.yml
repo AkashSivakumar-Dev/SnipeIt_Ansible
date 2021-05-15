@@ -1,5 +1,5 @@
 ---
-- hosts: snipeit
+- hosts: localhost
   become: yes
   tasks:
   - name: Update
