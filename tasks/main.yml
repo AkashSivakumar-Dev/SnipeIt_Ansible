@@ -1,11 +1,13 @@
 ---
-- hosts: snipeit
-  become: yes
+- hosts: localhost
   tasks:
   - name: Update
+    become: true
     apt:
      update_cache: yes
-  - include_tasks: apache2.yml
+  - name: Install Apache
+    become: true
+    include_tasks: apache2.yml
   - include_tasks: Mariadb.yml
   - include_tasks: php.yml
   - include_tasks: mysql_secure_installation.yml

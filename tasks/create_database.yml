@@ -17,4 +17,4 @@
     priv: '*.*:ALL'
     state: present
 - name: Flush Privileges
-  shell: sudo systemctl restart mariadb
+  shell: sudo systemctl restart mysql
