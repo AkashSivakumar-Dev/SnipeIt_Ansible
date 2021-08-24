@@ -1,6 +1,6 @@
 ---
 - name: Permission 1
-  shell: sudo chown -R www-data:www-data /var/www/snipeit/
+  shell: sudo chown -R www-data:www-data /home/ubuntu/environment/asset-tracker
 
 - name: Permission 2
-  shell: sudo chmod -R 755 /var/www/snipeit/
+  shell: sudo chmod -R 755 /home/ubuntu/environment/asset-tracker

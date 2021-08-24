@@ -3,4 +3,4 @@
 - name: Installing Composer
   shell: sudo composer install --no-dev --prefer-source --no-interaction
   args:
-    chdir: /var/www/snipeit/
+    chdir: /home/ubuntu/environment/asset-tracker

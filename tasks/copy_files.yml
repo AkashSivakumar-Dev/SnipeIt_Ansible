@@ -2,12 +2,14 @@
 -  name: replace .env
    copy:
       src: .env
-      dest: /var/www/snipeit/.env
+      dest: /home/ubuntu/environment/asset-tracker/.env
 -  name: replace php.ini
+   become: true
    copy:
       src: php.ini
       dest: /etc/php/7.2/apache2/php.ini
 -  name: replace snipeit.conf
+   become: true
    copy:
       src: snipeit.conf
       dest: /etc/apache2/sites-available/snipeit.conf

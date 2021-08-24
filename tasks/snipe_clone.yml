@@ -1,10 +1,11 @@
 ---
 - name: Snipe It Clone 
   git:
-      repo: https://github.com/snipe/snipe-it.git
-      dest: /var/www/snipeit
+      repo: git@github.com:PearlThoughts/asset-tracker.git
+      dest: /home/ubuntu/environment/asset-tracker
       update: no
--  name: Copy file with owner and permissions
-   copy:
+
+- name: Copy file with owner and permissions
+  copy:
       src: .env
-      dest: /var/www/snipeit/.env
+      dest: /home/ubuntu/environment/asset-tracker/.env
